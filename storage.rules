@@ -1,0 +1,104 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Users can upload their own photos
+    match /users/{userId}/photos/{photoId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Chat images - users can upload to chats they're part of
+    match /chat_images/{chatId}/{imageId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+    }
+    
+    // Report screenshots - users can upload evidence for their own reports
+    match /reports/{reporterId}/{reportedId}/{imageId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.uid == reporterId;
+    }
+    
+    // Helper function to check if user is admin
+    // Admin is determined by role field in accounts collection
+    function isAdmin() {
+      return request.auth != null && 
+             firestore.get(/databases/(default)/documents/accounts/$(request.auth.uid)).data.role == 'admin';
+    }
+    
+    // Merchant Business Documents (Business License, GST, PAN scans)
+    // SECURITY: Only merchant owner and admins can access
+    // COMPLIANCE: Required for KYC/AML regulations (7-year retention)
+    match /merchantDocuments/{userId}/{document} {
+      // Merchants can read their own documents, admins can read any
+      allow read: if request.auth != null && 
+                     (request.auth.uid == userId || isAdmin());
+      
+      // Only the merchant can upload their own documents
+      // Validate: max 10MB, images only
+      allow write: if request.auth != null && 
+                      request.auth.uid == userId &&
+                      request.resource.size < 10 * 1024 * 1024 &&
+                      request.resource.contentType.matches('image/.*');
+      
+      // Merchants can delete their own unverified documents
+      allow delete: if request.auth != null && 
+                       request.auth.uid == userId;
+    }
+    
+    // Individual Host Bank Documents (if required for verification)
+    match /bankDocuments/{userId}/{document} {
+      allow read: if request.auth != null && 
+                     (request.auth.uid == userId || isAdmin());
+      
+      allow write: if request.auth != null && 
+                      request.auth.uid == userId &&
+                      request.resource.size < 10 * 1024 * 1024 &&
+                      request.resource.contentType.matches('image/.*');
+      
+      allow delete: if request.auth != null && 
+                       request.auth.uid == userId;
+    }
+    
+    // Business Logos (for merchants/creators)
+    // Public read for event pages, only owner can write
+    match /business-logos/{accountId}/{logoFile} {
+      // Anyone can read business logos (displayed on event pages)
+      allow read: if true;
+      
+      // Only the account owner can upload/update their logo
+      // Validate: max 5MB, images only
+      allow write: if request.auth != null && 
+                      request.auth.uid == accountId &&
+                      request.resource.size < 5 * 1024 * 1024 &&
+                      request.resource.contentType.matches('image/.*');
+      
+      // Owner can delete their logo
+      allow delete: if request.auth != null && 
+                       request.auth.uid == accountId;
+    }
+    
+    // Event Media (banners, photos, videos)
+    // Public read for event discovery; only authenticated users can upload
+    match /event-media/{eventId}/{mediaFile} {
+      // Anyone can view event media (used in event cards, listings, detail pages)
+      allow read: if true;
+
+      // Any authenticated user can upload event media
+      // Validate: max 50MB, images or videos only
+      allow write: if request.auth != null &&
+                      request.resource.size < 50 * 1024 * 1024 &&
+                      (request.resource.contentType.matches('image/.*') ||
+                       request.resource.contentType.matches('video/.*'));
+
+      // Authenticated users can delete event media they uploaded
+      allow delete: if request.auth != null;
+    }
+
+    // Default: deny all other access
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

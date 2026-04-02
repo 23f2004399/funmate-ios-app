@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C80B921A6F3F58F76C31292 /* libPods-FunmateApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-FunmateApp.a */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		83482ED9C17E4D3EB117A01D /* Inter_18pt-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8FBB68A31274F56B96930D3 /* Inter_18pt-Black.ttf */; };
+		8AC612A1C26B467D9813F792 /* Inter_18pt-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F161A577D0A4615B9F1D297 /* Inter_18pt-BlackItalic.ttf */; };
+		521BD9D553804EC895D62EFF /* Inter_18pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7007CFD0DECC42FCBE3E5391 /* Inter_18pt-Bold.ttf */; };
+		119A5EFEDEA04D669A878CAD /* Inter_18pt-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DE0274663784246AB13303F /* Inter_18pt-BoldItalic.ttf */; };
+		E40C93BFFDAE40D1A04A911C /* Inter_18pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BDD85185BFB4E5980961721 /* Inter_18pt-ExtraBold.ttf */; };
+		4B739FDBD9EC4B18B6363977 /* Inter_18pt-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 352A3AE6DDF3440789748384 /* Inter_18pt-ExtraBoldItalic.ttf */; };
+		9D2FCFBDE19449B5964A9D76 /* Inter_18pt-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 321439D0088F48B3983A0192 /* Inter_18pt-ExtraLight.ttf */; };
+		5E25AAB084244D03861C32CA /* Inter_18pt-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C322A6FCFF04C79BBCEEE91 /* Inter_18pt-ExtraLightItalic.ttf */; };
+		D44D8FC39B894EAD97C4BD19 /* Inter_18pt-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 455DF3EEB06843A09584DB64 /* Inter_18pt-Italic.ttf */; };
+		376B328A0A3149328EF09969 /* Inter_18pt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 525071B22C944FFB88781748 /* Inter_18pt-Light.ttf */; };
+		F60CED5E18E6493FA32EB012 /* Inter_18pt-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95EE49B29C7247A6AB42E1A5 /* Inter_18pt-LightItalic.ttf */; };
+		304FA121DF144E6C9E5EF126 /* Inter_18pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30242AE8271D489FB11EB98E /* Inter_18pt-Medium.ttf */; };
+		F6E900DF0AFF4A1CB83068EB /* Inter_18pt-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01CE16C0025544169CE5BF33 /* Inter_18pt-MediumItalic.ttf */; };
+		5A11E32C5AA04C6DBD615523 /* Inter_18pt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47D01D03E01B4BE38AA6D139 /* Inter_18pt-Regular.ttf */; };
+		D9168030862C46378CD371E1 /* Inter_18pt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 242B796AD5B847E2B0AFC190 /* Inter_18pt-SemiBold.ttf */; };
+		519562869F2147908D2074DA /* Inter_18pt-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E90B2F942154A13B4A81A42 /* Inter_18pt-SemiBoldItalic.ttf */; };
+		D9501E334E7D4AC386A6DC59 /* Inter_18pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 330E6686D36B4AD8AF648D98 /* Inter_18pt-Thin.ttf */; };
+		A90213238A1641A2BEEEAAA4 /* Inter_18pt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17267BD6CD9D4AFDADC64354 /* Inter_18pt-ThinItalic.ttf */; };
+		276654E885334F06875A99FB /* Inter_24pt-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45E6892727B649EB958CA24F /* Inter_24pt-Black.ttf */; };
+		8FA3DFFBD1DF4C5985CF7467 /* Inter_24pt-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1387697FC1FA4E06B247D158 /* Inter_24pt-BlackItalic.ttf */; };
+		5E061BE19E044C6EAD51DCB6 /* Inter_24pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1689C089A254A1A90F40ADA /* Inter_24pt-Bold.ttf */; };
+		ADAE9D36510047B8858EEEA9 /* Inter_24pt-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A61EEEFB5664AA49CE0191F /* Inter_24pt-BoldItalic.ttf */; };
+		3C004D7028A449DCBF7A7742 /* Inter_24pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39861015D99049DB9BAC146B /* Inter_24pt-ExtraBold.ttf */; };
+		62079D2233A4447787DE64B1 /* Inter_24pt-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAD6713683B34F9B8E17625B /* Inter_24pt-ExtraBoldItalic.ttf */; };
+		AF068B7569894C14B0104879 /* Inter_24pt-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D4A22BA7AD84DCAA27529A1 /* Inter_24pt-ExtraLight.ttf */; };
+		568E373EEC1F44AA8CA84FAF /* Inter_24pt-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6031780E06B7485EAFF11075 /* Inter_24pt-ExtraLightItalic.ttf */; };
+		8F5F317024AF43AB9689839B /* Inter_24pt-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96DAD22FC2C54BB287AF9802 /* Inter_24pt-Italic.ttf */; };
+		35B40A325F1142889989F8F0 /* Inter_24pt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB2016EBE6EB42DB875BD29C /* Inter_24pt-Light.ttf */; };
+		5EAF96539074493BA7F3582D /* Inter_24pt-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 987B05CCEEAA4EBB85E34EAE /* Inter_24pt-LightItalic.ttf */; };
+		AEA2AEFFDE064766882EA7AC /* Inter_24pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1E0E5ECB6AF4A0FB3E449C0 /* Inter_24pt-Medium.ttf */; };
+		0C4DED3EE4A247ACBAD45008 /* Inter_24pt-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BF531B9EBBD403FAF1CE70B /* Inter_24pt-MediumItalic.ttf */; };
+		B0DFDF2467C441A297D54420 /* Inter_24pt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BD60FE7BBAA4C8395333E27 /* Inter_24pt-Regular.ttf */; };
+		F46EAE18EE2D4518B9DDE9A1 /* Inter_24pt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FD1C00F100F4D5B9C6B15C1 /* Inter_24pt-SemiBold.ttf */; };
+		4A0A5998FE454E5DA2907700 /* Inter_24pt-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E17EA1168FC4418F97E13900 /* Inter_24pt-SemiBoldItalic.ttf */; };
+		A1CE41033C754F9EB0E6F95A /* Inter_24pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83A9BE02540C4FA7B5A044C6 /* Inter_24pt-Thin.ttf */; };
+		CEB855E904F54EB683645567 /* Inter_24pt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD7C78905C0B44B189498BC3 /* Inter_24pt-ThinItalic.ttf */; };
+		CFE337F9EA7F4C838CCDD931 /* Inter_28pt-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 514882B116D549929168D4ED /* Inter_28pt-Black.ttf */; };
+		CD6CDF93D9AF4EFFB33BDC4F /* Inter_28pt-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AC166B698964D25AA095CAD /* Inter_28pt-BlackItalic.ttf */; };
+		516CC34026B64106AAFF43BB /* Inter_28pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6DCD420F7334C5A886DE09C /* Inter_28pt-Bold.ttf */; };
+		D3E32224352D410DBD1ACE0C /* Inter_28pt-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDE8F9AAE656428599E56256 /* Inter_28pt-BoldItalic.ttf */; };
+		271F4DA68A874D1F9E439854 /* Inter_28pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C32C55930EE146A7A4E87BB0 /* Inter_28pt-ExtraBold.ttf */; };
+		99B6912E8E4F4397BFCEE328 /* Inter_28pt-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED8E0DB14E894291882D695F /* Inter_28pt-ExtraBoldItalic.ttf */; };
+		DD4E43A3A32846CDA84B66B6 /* Inter_28pt-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68DDA9C72BA3494EB1D731CA /* Inter_28pt-ExtraLight.ttf */; };
+		6F631C22DDD040B88C40AED1 /* Inter_28pt-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64E02B3BEA11493AB3C03C18 /* Inter_28pt-ExtraLightItalic.ttf */; };
+		B29FCB1FB00D4B95AFAF291D /* Inter_28pt-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0840DF9AA22043D58EFA2EAE /* Inter_28pt-Italic.ttf */; };
+		D345C1D373C64C8086E25A60 /* Inter_28pt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0CBDC10A7B943489F3AD708 /* Inter_28pt-Light.ttf */; };
+		37ABEBAF64DB44099E46B61C /* Inter_28pt-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55BE32F98DF74F44908E5A41 /* Inter_28pt-LightItalic.ttf */; };
+		42D202886AEB42F491DB6674 /* Inter_28pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5CAC11E686640B2B3081DCE /* Inter_28pt-Medium.ttf */; };
+		7D7D5D20D1ED4CB091253DC4 /* Inter_28pt-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC73BC775B7F42C9A6FF88A9 /* Inter_28pt-MediumItalic.ttf */; };
+		83B8FE472475447ABB05C153 /* Inter_28pt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF53461B9A054BD8AC5E84C0 /* Inter_28pt-Regular.ttf */; };
+		3DBF8558965345D9A1E6079C /* Inter_28pt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A39E6005C2C48898F289ED9 /* Inter_28pt-SemiBold.ttf */; };
+		A162781CF2154E18883D6A98 /* Inter_28pt-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92C8AED8CD614CA7AF437911 /* Inter_28pt-SemiBoldItalic.ttf */; };
+		72DF53CE1A214DF3B9AF4BCE /* Inter_28pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D71D6C28CF0A4CD685E85F5F /* Inter_28pt-Thin.ttf */; };
+		3ADB290BA4434512802B93D8 /* Inter_28pt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D142F726432D44C6AD9F9710 /* Inter_28pt-ThinItalic.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13B07F961A680F5B00A75B9A /* FunmateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunmateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FunmateApp/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FunmateApp/Info.plist; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = FunmateApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-FunmateApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunmateApp.debug.xcconfig"; path = "Target Support Files/Pods-FunmateApp/Pods-FunmateApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-FunmateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunmateApp.release.xcconfig"; path = "Target Support Files/Pods-FunmateApp/Pods-FunmateApp.release.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-FunmateApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FunmateApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FunmateApp/AppDelegate.swift; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FunmateApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		B8FBB68A31274F56B96930D3 /* Inter_18pt-Black.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-Black.ttf"; path = "../src/assets/Inter/static/Inter_18pt-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0F161A577D0A4615B9F1D297 /* Inter_18pt-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-BlackItalic.ttf"; path = "../src/assets/Inter/static/Inter_18pt-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7007CFD0DECC42FCBE3E5391 /* Inter_18pt-Bold.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-Bold.ttf"; path = "../src/assets/Inter/static/Inter_18pt-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2DE0274663784246AB13303F /* Inter_18pt-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-BoldItalic.ttf"; path = "../src/assets/Inter/static/Inter_18pt-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1BDD85185BFB4E5980961721 /* Inter_18pt-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-ExtraBold.ttf"; path = "../src/assets/Inter/static/Inter_18pt-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		352A3AE6DDF3440789748384 /* Inter_18pt-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-ExtraBoldItalic.ttf"; path = "../src/assets/Inter/static/Inter_18pt-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		321439D0088F48B3983A0192 /* Inter_18pt-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-ExtraLight.ttf"; path = "../src/assets/Inter/static/Inter_18pt-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6C322A6FCFF04C79BBCEEE91 /* Inter_18pt-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-ExtraLightItalic.ttf"; path = "../src/assets/Inter/static/Inter_18pt-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		455DF3EEB06843A09584DB64 /* Inter_18pt-Italic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-Italic.ttf"; path = "../src/assets/Inter/static/Inter_18pt-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		525071B22C944FFB88781748 /* Inter_18pt-Light.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-Light.ttf"; path = "../src/assets/Inter/static/Inter_18pt-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		95EE49B29C7247A6AB42E1A5 /* Inter_18pt-LightItalic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-LightItalic.ttf"; path = "../src/assets/Inter/static/Inter_18pt-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		30242AE8271D489FB11EB98E /* Inter_18pt-Medium.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-Medium.ttf"; path = "../src/assets/Inter/static/Inter_18pt-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		01CE16C0025544169CE5BF33 /* Inter_18pt-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-MediumItalic.ttf"; path = "../src/assets/Inter/static/Inter_18pt-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		47D01D03E01B4BE38AA6D139 /* Inter_18pt-Regular.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-Regular.ttf"; path = "../src/assets/Inter/static/Inter_18pt-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		242B796AD5B847E2B0AFC190 /* Inter_18pt-SemiBold.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-SemiBold.ttf"; path = "../src/assets/Inter/static/Inter_18pt-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0E90B2F942154A13B4A81A42 /* Inter_18pt-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-SemiBoldItalic.ttf"; path = "../src/assets/Inter/static/Inter_18pt-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		330E6686D36B4AD8AF648D98 /* Inter_18pt-Thin.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-Thin.ttf"; path = "../src/assets/Inter/static/Inter_18pt-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		17267BD6CD9D4AFDADC64354 /* Inter_18pt-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Inter_18pt-ThinItalic.ttf"; path = "../src/assets/Inter/static/Inter_18pt-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		45E6892727B649EB958CA24F /* Inter_24pt-Black.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-Black.ttf"; path = "../src/assets/Inter/static/Inter_24pt-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1387697FC1FA4E06B247D158 /* Inter_24pt-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-BlackItalic.ttf"; path = "../src/assets/Inter/static/Inter_24pt-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E1689C089A254A1A90F40ADA /* Inter_24pt-Bold.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-Bold.ttf"; path = "../src/assets/Inter/static/Inter_24pt-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8A61EEEFB5664AA49CE0191F /* Inter_24pt-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-BoldItalic.ttf"; path = "../src/assets/Inter/static/Inter_24pt-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		39861015D99049DB9BAC146B /* Inter_24pt-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-ExtraBold.ttf"; path = "../src/assets/Inter/static/Inter_24pt-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DAD6713683B34F9B8E17625B /* Inter_24pt-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-ExtraBoldItalic.ttf"; path = "../src/assets/Inter/static/Inter_24pt-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1D4A22BA7AD84DCAA27529A1 /* Inter_24pt-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-ExtraLight.ttf"; path = "../src/assets/Inter/static/Inter_24pt-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6031780E06B7485EAFF11075 /* Inter_24pt-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-ExtraLightItalic.ttf"; path = "../src/assets/Inter/static/Inter_24pt-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		96DAD22FC2C54BB287AF9802 /* Inter_24pt-Italic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-Italic.ttf"; path = "../src/assets/Inter/static/Inter_24pt-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AB2016EBE6EB42DB875BD29C /* Inter_24pt-Light.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-Light.ttf"; path = "../src/assets/Inter/static/Inter_24pt-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		987B05CCEEAA4EBB85E34EAE /* Inter_24pt-LightItalic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-LightItalic.ttf"; path = "../src/assets/Inter/static/Inter_24pt-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B1E0E5ECB6AF4A0FB3E449C0 /* Inter_24pt-Medium.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-Medium.ttf"; path = "../src/assets/Inter/static/Inter_24pt-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7BF531B9EBBD403FAF1CE70B /* Inter_24pt-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-MediumItalic.ttf"; path = "../src/assets/Inter/static/Inter_24pt-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8BD60FE7BBAA4C8395333E27 /* Inter_24pt-Regular.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-Regular.ttf"; path = "../src/assets/Inter/static/Inter_24pt-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9FD1C00F100F4D5B9C6B15C1 /* Inter_24pt-SemiBold.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-SemiBold.ttf"; path = "../src/assets/Inter/static/Inter_24pt-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E17EA1168FC4418F97E13900 /* Inter_24pt-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-SemiBoldItalic.ttf"; path = "../src/assets/Inter/static/Inter_24pt-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		83A9BE02540C4FA7B5A044C6 /* Inter_24pt-Thin.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-Thin.ttf"; path = "../src/assets/Inter/static/Inter_24pt-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FD7C78905C0B44B189498BC3 /* Inter_24pt-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Inter_24pt-ThinItalic.ttf"; path = "../src/assets/Inter/static/Inter_24pt-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		514882B116D549929168D4ED /* Inter_28pt-Black.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-Black.ttf"; path = "../src/assets/Inter/static/Inter_28pt-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6AC166B698964D25AA095CAD /* Inter_28pt-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-BlackItalic.ttf"; path = "../src/assets/Inter/static/Inter_28pt-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A6DCD420F7334C5A886DE09C /* Inter_28pt-Bold.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-Bold.ttf"; path = "../src/assets/Inter/static/Inter_28pt-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FDE8F9AAE656428599E56256 /* Inter_28pt-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-BoldItalic.ttf"; path = "../src/assets/Inter/static/Inter_28pt-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C32C55930EE146A7A4E87BB0 /* Inter_28pt-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-ExtraBold.ttf"; path = "../src/assets/Inter/static/Inter_28pt-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ED8E0DB14E894291882D695F /* Inter_28pt-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-ExtraBoldItalic.ttf"; path = "../src/assets/Inter/static/Inter_28pt-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		68DDA9C72BA3494EB1D731CA /* Inter_28pt-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-ExtraLight.ttf"; path = "../src/assets/Inter/static/Inter_28pt-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		64E02B3BEA11493AB3C03C18 /* Inter_28pt-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-ExtraLightItalic.ttf"; path = "../src/assets/Inter/static/Inter_28pt-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0840DF9AA22043D58EFA2EAE /* Inter_28pt-Italic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-Italic.ttf"; path = "../src/assets/Inter/static/Inter_28pt-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F0CBDC10A7B943489F3AD708 /* Inter_28pt-Light.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-Light.ttf"; path = "../src/assets/Inter/static/Inter_28pt-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		55BE32F98DF74F44908E5A41 /* Inter_28pt-LightItalic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-LightItalic.ttf"; path = "../src/assets/Inter/static/Inter_28pt-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C5CAC11E686640B2B3081DCE /* Inter_28pt-Medium.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-Medium.ttf"; path = "../src/assets/Inter/static/Inter_28pt-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DC73BC775B7F42C9A6FF88A9 /* Inter_28pt-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-MediumItalic.ttf"; path = "../src/assets/Inter/static/Inter_28pt-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FF53461B9A054BD8AC5E84C0 /* Inter_28pt-Regular.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-Regular.ttf"; path = "../src/assets/Inter/static/Inter_28pt-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7A39E6005C2C48898F289ED9 /* Inter_28pt-SemiBold.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-SemiBold.ttf"; path = "../src/assets/Inter/static/Inter_28pt-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		92C8AED8CD614CA7AF437911 /* Inter_28pt-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-SemiBoldItalic.ttf"; path = "../src/assets/Inter/static/Inter_28pt-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D71D6C28CF0A4CD685E85F5F /* Inter_28pt-Thin.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-Thin.ttf"; path = "../src/assets/Inter/static/Inter_28pt-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D142F726432D44C6AD9F9710 /* Inter_28pt-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Inter_28pt-ThinItalic.ttf"; path = "../src/assets/Inter/static/Inter_28pt-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C80B921A6F3F58F76C31292 /* libPods-FunmateApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B07FAE1A68108700A75B9A /* FunmateApp */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				761780EC2CA45674006654EE /* AppDelegate.swift */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+			);
+			name = FunmateApp;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-FunmateApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* FunmateApp */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				83CE4AAC5E9841CAA6468F90 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* FunmateApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-FunmateApp.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-FunmateApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		83CE4AAC5E9841CAA6468F90 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				B8FBB68A31274F56B96930D3 /* Inter_18pt-Black.ttf */,
+				0F161A577D0A4615B9F1D297 /* Inter_18pt-BlackItalic.ttf */,
+				7007CFD0DECC42FCBE3E5391 /* Inter_18pt-Bold.ttf */,
+				2DE0274663784246AB13303F /* Inter_18pt-BoldItalic.ttf */,
+				1BDD85185BFB4E5980961721 /* Inter_18pt-ExtraBold.ttf */,
+				352A3AE6DDF3440789748384 /* Inter_18pt-ExtraBoldItalic.ttf */,
+				321439D0088F48B3983A0192 /* Inter_18pt-ExtraLight.ttf */,
+				6C322A6FCFF04C79BBCEEE91 /* Inter_18pt-ExtraLightItalic.ttf */,
+				455DF3EEB06843A09584DB64 /* Inter_18pt-Italic.ttf */,
+				525071B22C944FFB88781748 /* Inter_18pt-Light.ttf */,
+				95EE49B29C7247A6AB42E1A5 /* Inter_18pt-LightItalic.ttf */,
+				30242AE8271D489FB11EB98E /* Inter_18pt-Medium.ttf */,
+				01CE16C0025544169CE5BF33 /* Inter_18pt-MediumItalic.ttf */,
+				47D01D03E01B4BE38AA6D139 /* Inter_18pt-Regular.ttf */,
+				242B796AD5B847E2B0AFC190 /* Inter_18pt-SemiBold.ttf */,
+				0E90B2F942154A13B4A81A42 /* Inter_18pt-SemiBoldItalic.ttf */,
+				330E6686D36B4AD8AF648D98 /* Inter_18pt-Thin.ttf */,
+				17267BD6CD9D4AFDADC64354 /* Inter_18pt-ThinItalic.ttf */,
+				45E6892727B649EB958CA24F /* Inter_24pt-Black.ttf */,
+				1387697FC1FA4E06B247D158 /* Inter_24pt-BlackItalic.ttf */,
+				E1689C089A254A1A90F40ADA /* Inter_24pt-Bold.ttf */,
+				8A61EEEFB5664AA49CE0191F /* Inter_24pt-BoldItalic.ttf */,
+				39861015D99049DB9BAC146B /* Inter_24pt-ExtraBold.ttf */,
+				DAD6713683B34F9B8E17625B /* Inter_24pt-ExtraBoldItalic.ttf */,
+				1D4A22BA7AD84DCAA27529A1 /* Inter_24pt-ExtraLight.ttf */,
+				6031780E06B7485EAFF11075 /* Inter_24pt-ExtraLightItalic.ttf */,
+				96DAD22FC2C54BB287AF9802 /* Inter_24pt-Italic.ttf */,
+				AB2016EBE6EB42DB875BD29C /* Inter_24pt-Light.ttf */,
+				987B05CCEEAA4EBB85E34EAE /* Inter_24pt-LightItalic.ttf */,
+				B1E0E5ECB6AF4A0FB3E449C0 /* Inter_24pt-Medium.ttf */,
+				7BF531B9EBBD403FAF1CE70B /* Inter_24pt-MediumItalic.ttf */,
+				8BD60FE7BBAA4C8395333E27 /* Inter_24pt-Regular.ttf */,
+				9FD1C00F100F4D5B9C6B15C1 /* Inter_24pt-SemiBold.ttf */,
+				E17EA1168FC4418F97E13900 /* Inter_24pt-SemiBoldItalic.ttf */,
+				83A9BE02540C4FA7B5A044C6 /* Inter_24pt-Thin.ttf */,
+				FD7C78905C0B44B189498BC3 /* Inter_24pt-ThinItalic.ttf */,
+				514882B116D549929168D4ED /* Inter_28pt-Black.ttf */,
+				6AC166B698964D25AA095CAD /* Inter_28pt-BlackItalic.ttf */,
+				A6DCD420F7334C5A886DE09C /* Inter_28pt-Bold.ttf */,
+				FDE8F9AAE656428599E56256 /* Inter_28pt-BoldItalic.ttf */,
+				C32C55930EE146A7A4E87BB0 /* Inter_28pt-ExtraBold.ttf */,
+				ED8E0DB14E894291882D695F /* Inter_28pt-ExtraBoldItalic.ttf */,
+				68DDA9C72BA3494EB1D731CA /* Inter_28pt-ExtraLight.ttf */,
+				64E02B3BEA11493AB3C03C18 /* Inter_28pt-ExtraLightItalic.ttf */,
+				0840DF9AA22043D58EFA2EAE /* Inter_28pt-Italic.ttf */,
+				F0CBDC10A7B943489F3AD708 /* Inter_28pt-Light.ttf */,
+				55BE32F98DF74F44908E5A41 /* Inter_28pt-LightItalic.ttf */,
+				C5CAC11E686640B2B3081DCE /* Inter_28pt-Medium.ttf */,
+				DC73BC775B7F42C9A6FF88A9 /* Inter_28pt-MediumItalic.ttf */,
+				FF53461B9A054BD8AC5E84C0 /* Inter_28pt-Regular.ttf */,
+				7A39E6005C2C48898F289ED9 /* Inter_28pt-SemiBold.ttf */,
+				92C8AED8CD614CA7AF437911 /* Inter_28pt-SemiBoldItalic.ttf */,
+				D71D6C28CF0A4CD685E85F5F /* Inter_28pt-Thin.ttf */,
+				D142F726432D44C6AD9F9710 /* Inter_28pt-ThinItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* FunmateApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FunmateApp" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunmateApp;
+			productName = FunmateApp;
+			productReference = 13B07F961A680F5B00A75B9A /* FunmateApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FunmateApp" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* FunmateApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				83482ED9C17E4D3EB117A01D /* Inter_18pt-Black.ttf in Resources */,
+				8AC612A1C26B467D9813F792 /* Inter_18pt-BlackItalic.ttf in Resources */,
+				521BD9D553804EC895D62EFF /* Inter_18pt-Bold.ttf in Resources */,
+				119A5EFEDEA04D669A878CAD /* Inter_18pt-BoldItalic.ttf in Resources */,
+				E40C93BFFDAE40D1A04A911C /* Inter_18pt-ExtraBold.ttf in Resources */,
+				4B739FDBD9EC4B18B6363977 /* Inter_18pt-ExtraBoldItalic.ttf in Resources */,
+				9D2FCFBDE19449B5964A9D76 /* Inter_18pt-ExtraLight.ttf in Resources */,
+				5E25AAB084244D03861C32CA /* Inter_18pt-ExtraLightItalic.ttf in Resources */,
+				D44D8FC39B894EAD97C4BD19 /* Inter_18pt-Italic.ttf in Resources */,
+				376B328A0A3149328EF09969 /* Inter_18pt-Light.ttf in Resources */,
+				F60CED5E18E6493FA32EB012 /* Inter_18pt-LightItalic.ttf in Resources */,
+				304FA121DF144E6C9E5EF126 /* Inter_18pt-Medium.ttf in Resources */,
+				F6E900DF0AFF4A1CB83068EB /* Inter_18pt-MediumItalic.ttf in Resources */,
+				5A11E32C5AA04C6DBD615523 /* Inter_18pt-Regular.ttf in Resources */,
+				D9168030862C46378CD371E1 /* Inter_18pt-SemiBold.ttf in Resources */,
+				519562869F2147908D2074DA /* Inter_18pt-SemiBoldItalic.ttf in Resources */,
+				D9501E334E7D4AC386A6DC59 /* Inter_18pt-Thin.ttf in Resources */,
+				A90213238A1641A2BEEEAAA4 /* Inter_18pt-ThinItalic.ttf in Resources */,
+				276654E885334F06875A99FB /* Inter_24pt-Black.ttf in Resources */,
+				8FA3DFFBD1DF4C5985CF7467 /* Inter_24pt-BlackItalic.ttf in Resources */,
+				5E061BE19E044C6EAD51DCB6 /* Inter_24pt-Bold.ttf in Resources */,
+				ADAE9D36510047B8858EEEA9 /* Inter_24pt-BoldItalic.ttf in Resources */,
+				3C004D7028A449DCBF7A7742 /* Inter_24pt-ExtraBold.ttf in Resources */,
+				62079D2233A4447787DE64B1 /* Inter_24pt-ExtraBoldItalic.ttf in Resources */,
+				AF068B7569894C14B0104879 /* Inter_24pt-ExtraLight.ttf in Resources */,
+				568E373EEC1F44AA8CA84FAF /* Inter_24pt-ExtraLightItalic.ttf in Resources */,
+				8F5F317024AF43AB9689839B /* Inter_24pt-Italic.ttf in Resources */,
+				35B40A325F1142889989F8F0 /* Inter_24pt-Light.ttf in Resources */,
+				5EAF96539074493BA7F3582D /* Inter_24pt-LightItalic.ttf in Resources */,
+				AEA2AEFFDE064766882EA7AC /* Inter_24pt-Medium.ttf in Resources */,
+				0C4DED3EE4A247ACBAD45008 /* Inter_24pt-MediumItalic.ttf in Resources */,
+				B0DFDF2467C441A297D54420 /* Inter_24pt-Regular.ttf in Resources */,
+				F46EAE18EE2D4518B9DDE9A1 /* Inter_24pt-SemiBold.ttf in Resources */,
+				4A0A5998FE454E5DA2907700 /* Inter_24pt-SemiBoldItalic.ttf in Resources */,
+				A1CE41033C754F9EB0E6F95A /* Inter_24pt-Thin.ttf in Resources */,
+				CEB855E904F54EB683645567 /* Inter_24pt-ThinItalic.ttf in Resources */,
+				CFE337F9EA7F4C838CCDD931 /* Inter_28pt-Black.ttf in Resources */,
+				CD6CDF93D9AF4EFFB33BDC4F /* Inter_28pt-BlackItalic.ttf in Resources */,
+				516CC34026B64106AAFF43BB /* Inter_28pt-Bold.ttf in Resources */,
+				D3E32224352D410DBD1ACE0C /* Inter_28pt-BoldItalic.ttf in Resources */,
+				271F4DA68A874D1F9E439854 /* Inter_28pt-ExtraBold.ttf in Resources */,
+				99B6912E8E4F4397BFCEE328 /* Inter_28pt-ExtraBoldItalic.ttf in Resources */,
+				DD4E43A3A32846CDA84B66B6 /* Inter_28pt-ExtraLight.ttf in Resources */,
+				6F631C22DDD040B88C40AED1 /* Inter_28pt-ExtraLightItalic.ttf in Resources */,
+				B29FCB1FB00D4B95AFAF291D /* Inter_28pt-Italic.ttf in Resources */,
+				D345C1D373C64C8086E25A60 /* Inter_28pt-Light.ttf in Resources */,
+				37ABEBAF64DB44099E46B61C /* Inter_28pt-LightItalic.ttf in Resources */,
+				42D202886AEB42F491DB6674 /* Inter_28pt-Medium.ttf in Resources */,
+				7D7D5D20D1ED4CB091253DC4 /* Inter_28pt-MediumItalic.ttf in Resources */,
+				83B8FE472475447ABB05C153 /* Inter_28pt-Regular.ttf in Resources */,
+				3DBF8558965345D9A1E6079C /* Inter_28pt-SemiBold.ttf in Resources */,
+				A162781CF2154E18883D6A98 /* Inter_28pt-SemiBoldItalic.ttf in Resources */,
+				72DF53CE1A214DF3B9AF4BCE /* Inter_28pt-Thin.ttf in Resources */,
+				3ADB290BA4434512802B93D8 /* Inter_28pt-ThinItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"\\\"$WITH_ENVIRONMENT\\\" \\\"$REACT_NATIVE_XCODE\\\"\"\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FunmateApp/Pods-FunmateApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FunmateApp/Pods-FunmateApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FunmateApp/Pods-FunmateApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FunmateApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FunmateApp/Pods-FunmateApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FunmateApp/Pods-FunmateApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FunmateApp/Pods-FunmateApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-FunmateApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = FunmateApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = FunmateApp;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-FunmateApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = FunmateApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = FunmateApp;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FunmateApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FunmateApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

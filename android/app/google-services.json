@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "544227080732",
+    "project_id": "funmate-f3b01",
+    "storage_bucket": "funmate-f3b01.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544227080732:android:df09f7378e768a3413bdd9",
+        "android_client_info": {
+          "package_name": "com.funmateapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544227080732-cttslurce2113hnddm5v530f8fggc342.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.funmateapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "544227080732-qtj50op962n2rrehha90ndacmtfbkj4e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.funmateapp",
+            "certificate_hash": "bee528f296e04bc6d4b4e837af70a614cde9c4da"
+          }
+        },
+        {
+          "client_id": "544227080732-ag40c3g4g64tgv910cu1it16bmmn4g3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy7kLaVrKV5C760zDxR-x1QjaZWpUdiYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544227080732-ag40c3g4g64tgv910cu1it16bmmn4g3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

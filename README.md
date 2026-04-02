@@ -1,1 +1,1 @@
-# funmate-ios-app
+# Funmate App
